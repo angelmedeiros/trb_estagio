@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mq.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>Jhennifer Medeiros - Nutricionista</title>
+</head>
+<body>
+    <header>
+        <header class="header">
+            <div class="logo">
+                <h1>Jhennifer Medeiros</h1>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <nav class="nav-list">
+                <a class="nav-link" href="#sobre">Sobre</a>
+                <a class="nav-link" href="#servicos">Serviços</a>
+                <a class="nav-link" href="#dicas">Dicas</a>
+                <a class="nav-link" href="#contato">Contato</a>
+            </nav>
+        </header>
+    </header>
+    <main>
+        <section id="sobre">
+            <div class="texto">
+                <div>
+                    <div class="titulos">
+                        <h1>Jhenifer Medeiros</h1>
+                        <h4>Nutricionista e Terapeuta Alimentar</h4>
+                    </div>
+                    <p>Sou nutricionista clínica, atendo desde crianças a idosos com foco em promover saúde através da alimentação saudável e consciente. Além de atender adultos com o objetivo de emagrecimento, hipertrofia, prevenção e tratamento de doenças crônicas não transmissíveis, também tenho uma abordagem diferencial para crianças e adolescentes típicos ou atípicos que estão com seletividade alimentar, baixo peso, sobrepeso ou obesidade.</p>
+                </div>
+                <img class="img-sobre" src="img/empe.jpeg" alt="Jhennifer">
+            </div>
+            <div class="redes-sociais">
+                <a href="https://wa.me/5527999665058" target="_blank"><img src="img/icons8-whatsapp-48.png" alt="Whatsapp"></a>
+                <a href="https://www.instagram.com/nutrijhenimedeiros/" target="_blank"><img src="img/icons8-instagram-48.png" alt="Instagram"></a>
+            </div>
+        </section>
+        <section id="servicos">
+            <div class="itens">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Consulta presencial ou online</li>
+                    <li>Terapia alimentar</li>
+                    <li>Avaliação física </li>
+                    <li>Plano alimentar </li>
+                    <li>Análise de exames laboratoriais </li>
+                    <li>Suplementação personalizada </li>
+                </ul>
+            </div>
+            <section class="galeria">
+                <div id="carouselExampleIndicators" width="250" class="carousel" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner" width="250">
+                      <div class="carousel-item active">
+                        <img class="img_carousel" src="img/crianca1.jpeg" width="300" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img_carousel" src="img/crianca2.jpeg" width="300" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img_carousel" src="img/crianca3.jpeg" width="300" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img_carousel" src="img/crianca4.jpeg" width="300" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </section>
+        </section>
+        <section id="dicas">
+            <h2>Dicas de Nutrição</h2>
+            <ul id="dicas-lista"></ul>
+            <button onclick="alternarDicas()" id="botao-dicas">Mostrar Dicas</button>
+        </section> 
+        <section id="contato">
+            <h2>Deixe uma mensagem</h2>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </section>
+    </main>
+    <footer>
+        <div class="divFrase">
+            <div class="logo">
+                <h1>Jhenifer Medeiros</h1>
+            </div>
+            <p>Acompanhamento Nutricional</p>
+        </div>
+        <div class="divEncontre">
+            <strong>Me encontre</strong>
+            <p>Whatsapp: <a href="https://wa.me/5527999665058" target="_blank">27 99966-5058</a></p>
+            <p>Email: <a href="mailto:jhenimc2022@hotmail.com">jhenimc2022@hotmail.com</a></p>
+            <p>Endereço: Mantenópolis, Espirito Santo.</p>
+            <p>CEP: 29770000</p>
+        </div>
+    </footer>
+</body>
+</html>

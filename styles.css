@@ -1,0 +1,154 @@
+@import url("colors.css");
+/*FONTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Taviraj", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*HEADER*/
+
+.header{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: var(--marrom);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.338);
+}
+
+.logo{
+    color: var(--bege-claro);
+}
+
+.nav-list{
+    display: flex;
+    gap: 55px;
+}
+
+.nav-list > a{
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--claro);
+}
+
+.nav-list > a:hover{
+    transition: 0.5s;
+    color: var(--branco);
+}
+
+
+/* MAIN */
+
+main{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.img-sobre{
+    max-width: 300px;
+}
+
+#sobre{
+    text-align: justify;
+    .titulos{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    .texto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*serviços*/
+
+#servicos{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+.img_carousel{
+    border-radius: 10px;
+}
+
+.carousel{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: var(--bege-claro);
+}
+
+#dicas{
+    margin: 100px 0px;
+}
+
+#dicas-lista {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease; 
+}
+
+#botao-dicas{
+    border: 1px solid var(--marrom);
+    background-color: var(--bege-claro);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 20px;
+}
+
+#botao-dicas:hover{
+    transition: 0.3s;
+    background-color: var(--claro);
+}
+
+#dicas-lista.mostrar {
+    max-height: 500px; 
+}
+
+#contato{
+    margin: 100px 0px;
+}
+
+
+/* FOOTER */
+
+footer{
+    max-height: 600px;
+    background-color: var(--bege-claro);
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer > .divFrase > .logo {
+    color: var(--marrom);
+}
+
+.divFrase{
+    max-width: 400px;
+    margin: 20px 0px;
+}
+
+.divEncontre{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.divEncontre a{
+    color: var(--branco);
+    text-decoration: none;
+}
